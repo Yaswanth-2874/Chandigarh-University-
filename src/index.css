@@ -1,13 +1,56 @@
 body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #333;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  background-image: url(https://1.bp.blogspot.com/-PF-ExPxtXlQ/YQDrrpAA0AI/AAAAAAAAoRM/I_NxEEGmOHYngobE3TR8PA1WEMtC4r1CwCLcBGAsYHQ/s1600/Building.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.transparent {
+  display: flex;
+  gap: 5px;
+  background: rgb(25 26 32 / 50%);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px) contrast(90%);
+  -webkit-backdrop-filter: blur(10px) contrast(90%);
+  margin-right: auto !important;
+  margin-left: 5%;
+  margin-top: 8%;
+  height: fit-content;
+  align-items: center;
+  width: 310px;
+  transition: ease-in-out 0.5s;
+}
+.input {
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff;
+  line-height: 48px;
+  width: 295px;
+  padding-left: 15px;
+  transition: ease-in-out 0.3s;
+}
+
+::placeholder {
+  color: white;
+}
+
+.black::placeholder {
+  color: black;
 }
