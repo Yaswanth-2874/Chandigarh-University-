@@ -43,7 +43,7 @@ function Login(props) {
         captcha: enteredCaptcha,
       })
       .then((response) => {
-        setResponse(response.data);
+        setResponse(response.data.studentMarks);
         setIsLoggedIn(true);
       });
   };
